@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <form id="formulario">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombreCompleto" placeholder="Ingrese su nombre" id="nombre">
+            <label for="apellido">Apellido: </label>
+            <input type="text" name="apellidoCompleto" placeholder="Ingrese su apellido" id="apellido">
+            <label for="mail">Mail: </label>
+            <input type="text" name="email" placeholder="email@algo.com" id="email">
+            <label for="fechaDeNacimiento">Fecha de nacimiento: </label>
+            <input type="date" id="fechaNac" name="fechaDeNacimiento"
+            value="2023-01-01" min="1920-01-01" max="2023-12-31">
+            <label for="pais">Seleccione su país: </label>
+            <select name='pais' id="selectorPais">
+                <option value="select" selected>Seleccione un país</option>
+            </select>
+        </form>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
