@@ -1,0 +1,103 @@
+/* colores
+#273469 azul
+#297373 verde
+#a379c9 lila
+#e6e6e6 blanco
+#39393a gris */
+html {
+    background-color: #e6e6e6 ;
+}
+/* Parte del Hero */
+
+.Hero img {
+    position:absolute;
+    width: 521px;
+    height: 497px;
+    left: 60vw;
+    top: 20vh;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+    
+    .Hero h1 {
+    width: fit-content;
+    height: fit-content;
+    margin: 13vh 0% 20% 0%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    }
+    
+    .Hero p {
+    width: fit-content;
+    height: fit-content;
+    left: 40px;
+    top: 386px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    }
+    
+    .Hero span {
+        margin-left: 3vw;
+    }
+    
+    .Hero button {
+        border-radius: 22px;
+        width: fit-content;
+        margin-left: 8vw;
+        padding: 0px 50px;
+    }
+
+/* Parte de las targetas de cursos */
+.bannercursos {
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(100px, auto);
+    position: relative;
+}
+
+h3 {
+    justify-content: left;
+    font-size: 2em;
+    position: absolute;
+    margin-top: auto;
+}
+
+button {
+    height:fit-content;
+    margin-right: 5%;
+    width: auto;
+    background-color: #a379c9;
+    margin: 8vh 2% 0% 2%;
+    font-size: 1em;
+}
+
+.cursos {
+    min-width: 220px;
+    max-width: 250px;
+    height: 366px;
+    margin: 5% 2% 1% 2%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #a379c9;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default; /* para que no muesre el cursos de texto */
+    transition: all 400ms ease;
+}
+
+.cursos img {
+    width: 100%;
+    height: 150px; /* ver figma */
+}
+
+.cursos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
