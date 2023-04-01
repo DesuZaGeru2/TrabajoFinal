@@ -1,0 +1,47 @@
+/* colores
+#273469 azul
+#297373 verde
+#a379c9 lila
+#e6e6e6 blanco
+#39393a gris */
+.bannercursos {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin: auto;
+}
+
+.bannercursos h3 {
+    justify-content: left;
+    font-size: 2em;
+}
+
+.bannercursos button {
+    justify-content: left;
+    height:fit-content;
+    width: auto;
+    
+}
+
+.cursos {
+    width: 330px; /* Ver en el figma */
+    height: 430px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #a379c9;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: default; /* para que no muesre el cursos de texto */
+    transition: all 400ms ease;
+}
+
+.cursos img {
+    width: fit-content;
+    height: 150px; /* ver figma */
+}
+
+.cursos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
