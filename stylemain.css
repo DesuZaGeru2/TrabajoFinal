@@ -181,3 +181,58 @@ button {
     color: #e6e6e6;
 }
 
+/* Footer */
+footer {
+    background-color: #39393a;
+    height: fit-content;
+    width: 100%;
+    color: #e6e6e6;
+    padding: 21px 29px;
+}
+footer .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+}
+
+footer .redes img {
+    object-fit: cover;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div img{
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    margin-top: 11px;
+    margin-bottom: 3px;
+}
+
+footer .legales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .legales span{
+    margin-right: 15%;
+}
+
+footer .legales span a {
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+footer .legales span a:hover {
+    text-decoration: underline;
+}
