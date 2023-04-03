@@ -114,6 +114,52 @@ li {
     margin-left: 8vw;
     padding: 0px 50px;
 }
+/* Parte de objetivos */
+.objetivos{
+    box-sizing: border-box;
+    height: 508px;
+    width: 100%;
+    margin-top: 34px;
+    padding: 34px 45px 66px 45px;
+    background-color: #273469;
+    align-items: center;
+}
+
+.objetivos h3{
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 0px;
+}
+
+.bannerobjetivos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 97px;
+    justify-content: space-between;
+}
+
+.trans {
+    display: flex;
+    flex-direction: column;
+    width:258px;
+    height: 313px;
+    background: rgba(255, 255, 255, 0.651);
+    margin: 0px 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.trans figure{
+    width: 30%;
+    height: 30%;
+}
+
+.trans p{
+    height: 55%;
+    width: 90%;
+    text-align: center;
+}
+
 
 /* Parte de las targetas de cursos */
 .bannercursos {
@@ -189,6 +235,7 @@ footer {
     color: #e6e6e6;
     padding: 21px 29px;
 }
+
 footer .redes {
     display: flex;
     flex-direction: row;
