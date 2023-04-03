@@ -4,22 +4,86 @@
 #a379c9 lila
 #e6e6e6 blanco
 #39393a gris */
+/* Generales */
 html {
-    background-color: #e6e6e6 ;
+    background-color: #e6e6e6;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
-/* Parte del Hero */
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section {
+    position:relative;
+    display:flex;
+    flex-direction: column;
+}
+
+/* nav */
+nav {
+    height: 88px;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+    display: flex;   
+    gap: 35px;
+    font-size: medium;
+    background-color: rgba(22, 22, 22, 0.945);
+    color: #e6e6e6; 
+    }
+nav a {
+    width:fit-content;
+    text-decoration: none;
+    color: #e6e6e6;
+    padding-top: 30px;
+    padding-left: 5px;
+}
+
+nav p{
+    font-size: 34px;
+    margin-top: 22px;
+    cursor: default;
+}
+
+nav img {
+    left: 2px;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+}
+
+nav ul {
+    margin-top: 30px;
+    margin-left: 20%;
+}
+li {
+    display:inline-block;
+    padding: 0px 20px;
+}
+
+/* Parte del hero */
 .Hero img {
-    position:absolute;
+    position: absolute;
+    float: right;
+    flex-direction: row;
     width: 521px;
     height: 497px;
     left: 60vw;
     top: 20vh;
     border-radius: 50%;
     object-fit: cover;
-    }
+}
     
-    .Hero h1 {
+.Hero h1 {
     width: fit-content;
     height: fit-content;
     margin: 13vh 0% 20% 0%;
@@ -27,9 +91,9 @@ html {
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
-    }
+}
     
-    .Hero p {
+.Hero p {
     width: fit-content;
     height: fit-content;
     left: 40px;
@@ -38,18 +102,18 @@ html {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    }
+}
     
-    .Hero span {
-        margin-left: 3vw;
-    }
+.Hero span {
+    margin-left: 3vw;
+}
     
-    .Hero button {
-        border-radius: 22px;
-        width: fit-content;
-        margin-left: 8vw;
-        padding: 0px 50px;
-    }
+.Hero button {
+    border-radius: 22px;
+    width: fit-content;
+    margin-left: 8vw;
+    padding: 0px 50px;
+}
 
 /* Parte de las targetas de cursos */
 .bannercursos {
@@ -88,7 +152,7 @@ button {
     overflow: hidden;
     background: #a379c9;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default; /* para que no muesre el cursos de texto */
+    cursor: default; /* para que no muestre el cursos de texto */
     transition: all 400ms ease;
 }
 
@@ -100,4 +164,75 @@ button {
 .cursos:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Parte del banner de la vision */
+
+.bannervision div {
+    width: 100%;
+    height: 280px;
+    margin-top: 38px;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(./Assets/nuestra\ vision\ seccion.jpg) no-repeat center center;
+    position: absolute;
+}
+
+.bannervision h4 {
+    position:relative;
+    color: #e6e6e6;
+}
+
+/* Footer */
+footer {
+    background-color: #39393a;
+    height: fit-content;
+    width: 100%;
+    color: #e6e6e6;
+    padding: 21px 29px;
+}
+footer .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+}
+
+footer .redes img {
+    object-fit: cover;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div img{
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    margin-top: 11px;
+    margin-bottom: 3px;
+}
+
+footer .legales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .legales span{
+    margin-right: 15%;
+}
+
+footer .legales span a {
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+footer .legales span a:hover {
+    text-decoration: underline;
 }
