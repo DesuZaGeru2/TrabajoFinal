@@ -1,0 +1,285 @@
+/* colores
+#273469 azul
+#297373 verde
+#a379c9 lila
+#e6e6e6 blanco
+#39393a gris */
+/* Generales */
+html {
+    background-color: #e6e6e6;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section {
+    position:relative;
+    display:flex;
+    flex-direction: column;
+}
+
+/* nav */
+nav {
+    height: 88px;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+    display: flex;   
+    gap: 35px;
+    font-size: medium;
+    background-color: rgba(22, 22, 22, 0.945);
+    color: #e6e6e6; 
+    }
+nav a {
+    width:fit-content;
+    text-decoration: none;
+    color: #e6e6e6;
+    padding-top: 30px;
+    padding-left: 5px;
+}
+
+nav p{
+    font-size: 34px;
+    margin-top: 22px;
+    cursor: default;
+}
+
+nav img {
+    left: 2px;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+}
+
+nav ul {
+    margin-top: 30px;
+    margin-left: 20%;
+}
+li {
+    display:inline-block;
+    padding: 0px 20px;
+}
+
+/* Parte del hero */
+.Hero img {
+    position: absolute;
+    float: right;
+    flex-direction: row;
+    width: 521px;
+    height: 497px;
+    left: 60vw;
+    top: 20vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+    
+.Hero h1 {
+    width: fit-content;
+    height: fit-content;
+    margin: 13vh 0% 20% 0%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+}
+    
+.Hero p {
+    width: fit-content;
+    height: fit-content;
+    left: 40px;
+    top: 386px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+    
+.Hero span {
+    margin-left: 3vw;
+}
+    
+.Hero button {
+    border-radius: 22px;
+    width: fit-content;
+    margin-left: 8vw;
+    padding: 0px 50px;
+}
+/* Parte de objetivos */
+.objetivos{
+    box-sizing: border-box;
+    height: 508px;
+    width: 100%;
+    margin-top: 34px;
+    padding: 34px 45px 66px 45px;
+    background-color: #273469;
+    align-items: center;
+}
+
+.objetivos h3{
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 0px;
+}
+
+.bannerobjetivos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 97px;
+    justify-content: space-between;
+}
+
+.trans {
+    display: flex;
+    flex-direction: column;
+    width:258px;
+    height: 313px;
+    background: rgba(255, 255, 255, 0.651);
+    margin: 0px 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.trans figure{
+    width: 30%;
+    height: 30%;
+}
+
+.trans p{
+    height: 55%;
+    width: 90%;
+    text-align: center;
+}
+
+
+/* Parte de las targetas de cursos */
+.bannercursos {
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(100px, auto);
+    position: relative;
+}
+
+h3 {
+    justify-content: left;
+    font-size: 2em;
+    position: absolute;
+    margin-top: auto;
+}
+
+button {
+    height:fit-content;
+    margin-right: 5%;
+    width: auto;
+    background-color: #a379c9;
+    margin: 8vh 2% 0% 2%;
+    font-size: 1em;
+}
+
+.cursos {
+    min-width: 220px;
+    max-width: 250px;
+    height: 366px;
+    margin: 5% 2% 1% 2%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #a379c9;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default; /* para que no muestre el cursos de texto */
+    transition: all 400ms ease;
+}
+
+.cursos img {
+    width: 100%;
+    height: 150px; /* ver figma */
+}
+
+.cursos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Parte del banner de la vision */
+
+.bannervision div {
+    width: 100%;
+    height: 280px;
+    margin-top: 38px;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(./Assets/nuestra\ vision\ seccion.jpg) no-repeat center center;
+    position: absolute;
+}
+
+.bannervision h4 {
+    position:relative;
+    color: #e6e6e6;
+}
+
+/* Footer */
+footer {
+    background-color: #39393a;
+    height: fit-content;
+    width: 100%;
+    color: #e6e6e6;
+    padding: 21px 29px;
+}
+
+footer .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+}
+
+footer .redes img {
+    object-fit: cover;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div img{
+    height: 58px;
+    width: 58px;
+    border-radius: 50%;
+    margin-top: 11px;
+    margin-bottom: 3px;
+}
+
+footer .legales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .legales span{
+    margin-right: 15%;
+}
+
+footer .legales span a {
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+footer .legales span a:hover {
+    text-decoration: underline;
+}

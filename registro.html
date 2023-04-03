@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
 <body>
     <header></header>
     <main>
+        <div class="registro">
+            <h2>Regístrate</h2>
         <form id="formulario">
+            <div class="inputContainer">
             <label for="nombre">Nombre: </label>
             <input type="text" name="nombreCompleto" placeholder="Ingrese su nombre" id="nombre">
+            </div>
+            <div class="inputContainer">
             <label for="apellido">Apellido: </label>
             <input type="text" name="apellidoCompleto" placeholder="Ingrese su apellido" id="apellido">
+            </div>
+            <div class="inputContainer">
             <label for="mail">Mail: </label>
             <input type="text" name="email" placeholder="email@algo.com" id="email">
+            </div>
+            <div class="inputContainer">
             <label for="fechaDeNacimiento">Fecha de nacimiento: </label>
             <input type="date" id="fechaNac" name="fechaDeNacimiento"
             value="2023-01-01" min="1920-01-01" max="2023-12-31">
@@ -23,9 +33,11 @@
             <select name='pais' id="selectorPais">
                 <option value="select" selected>Seleccione un país</option>
             </select>
+            </div>
         </form>
+    </div>
     </main>
     <footer></footer>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
