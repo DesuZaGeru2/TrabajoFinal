@@ -55,6 +55,7 @@ main{
 display: flex;
 flex-wrap: wrap;
 margin-top: 3vw;
+margin-bottom: 2vh;
 
 }
 
@@ -125,6 +126,7 @@ margin-top: 3vw;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 3vh 5vw;
+    margin-bottom: 2vh;
 }
 
 .bannerobjetivos h3{
@@ -166,7 +168,161 @@ margin-top: 3vw;
     padding: 2vw;
 }
 
-/* .objetivos .objetivo4{
-    width: 65%;
-    padding-left: 4vw;
-} */
+
+/* ---------------------------SECCION CURSOS-------------------- */
+
+.section-cursos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5vh;
+    margin-top: 8vh;
+    padding: 1vh 3vw;
+}
+
+.section-cursos h3 {
+    justify-content: left;
+    font-size: 2em;
+    position: absolute;
+    margin-top: auto;
+}
+
+.section-cursos button {
+    border: none;
+    height:fit-content;
+    margin-right: 5%;
+    width: auto;
+    background-color: #a379c9;
+    margin: 8vh 2% 0% 2%;
+    font-size: 1em;
+}
+
+.bannercursos {
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(100px, auto);
+    position: relative;
+}
+
+.sectionCursos h3 {
+    justify-content: left;
+    font-size: 2em;
+    position: absolute;
+    margin-top: auto;
+}
+
+.sectionCursos button {
+    height:fit-content;
+    margin-right: 5%;
+    width: auto;
+    background-color: #a379c9;
+    margin: 8vh 2% 0% 2%;
+    font-size: 1em;
+}
+
+.cursos {
+    min-width: 220px;
+    max-width: 250px;
+    height: 366px;
+    margin: 5% 2% 1% 2%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #a379c9;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default; /* para que no muestre el cursos de texto */
+    transition: all 400ms ease;
+}
+
+.cursos img {
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 150px; /* ver figma */
+}
+
+.cursos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* --------------------------SECCION VISION-------------------- */
+
+.bannervision div {
+    width: 100%;
+    height: 280px;
+    margin-top: 38px;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(./Assets/nuestra\ vision\ seccion.jpg) no-repeat center center;
+    position: absolute;
+}
+
+.bannervision h4 {
+    position:relative;
+    color: #e6e6e6;
+}
+
+
+/* ------------------------------FOOTER-------------------------- */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #39393a;
+    align-items: center;
+    /* height: fit-content; */
+    width: 100%;
+    color: #e6e6e6;
+    padding: 21px 29px;
+}
+
+.redesSociales {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.8em;
+    justify-content: center;
+    gap: 35px;
+}
+
+
+footer img{
+    width: 5vw;
+    border-radius: 50%;
+    margin: 2vh 1vw;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+.texto-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-footer p, a{
+    font-size: small;
+}
+
+footer .legales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .legales span{
+    margin-right: 15%;
+}
+
+footer .legales span a {
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+footer .legales span a:hover {
+    text-decoration: underline;
+}
