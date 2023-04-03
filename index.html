@@ -5,71 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Iconos/logoAcademiaX.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/stylemain.css">
+    <!-- <link rel="stylesheet" href="./stylemain.css"> -->
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Academia X</title>
 </head>
 <body> 
   <header>
-    <nav>
-      <img src="./logos de redes/logoAcademiaX.png" alt="Logo de una silueta de la cabeza con una spinner">
-      <p>Academia X</p>
-      <a href="">Inicio</a>
+    <img src="./img/logoWhite.png" alt="Logo de una silueta de la cabeza con una spinner">
+    
+    <nav class="headnav">
+      <a href="">Home</a>
       <a href="">Cursos</a>
-      <a href="">Sobre Nosotros</a>
+      <a href="">Sobre nosotros</a>
       <a href="">Contacto</a>
-      <ul>
-        <li><a href="#">Ingresa</a></li>
-        <li><a href="#">Regístrate</a></li>
-      </ul>
+      <br>
+      <br>
+      <a href="#">Ingresa</a>
+      <a href="#">Regístrate</a>
+    
     </nav>
   </header>
   <main>
-        <!-- seccion Hero -->
-      <section class="Hero"> 
+
+      <section class="hero"> <!-- seccion Hero -->
+        <div class="textoHero">
         <h1>Somos una plataforma de aprendizaje en línea con una amplia gama de cursos a tu disposición</h1>
         <p>Únete a nuestra comunidad  y descubre el mundo del aprendizaje en línea a tu propio ritmo.</p>
-        <img src="./Assets/imagen hero.jpg" alt="Frase motivadora nunca dejes de aprender">
-        <p> <span> <strong> Inscríbete ahora y te regalamos una semana</strong></span></p>
+        <br>
+        <br>
+        <span> <p class="inscribete"><strong> Inscríbete ahora y te regalamos una semana</strong></p></span>
         <button>
           <p>Comenzar prueba gratuita</p>
         </button>
+      </div>
+      <div class="imagenHero">
+        <img src="./Assets/imagen hero.jpg" alt="Frase motivadora nunca dejes de aprender">
+      </div>
       </section>
-      <!-- seccion objetivos -->
-      <section class="objetivos">  
+
+
+      <section class="bannerobjetivos"> <!-- seccion objetivos -->
         <h3>Invierte en tus objetivos profesionales</h3>
-        <div class="bannerobjetivos">
-          <div class="trans">
-            <figure>
-              <img src="" alt="imagen del objetivo 1"> <!-- targeta de objetivo -->
-            </figure>
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.</p>
-          </div>
-          <div class="trans">
-            <figure>
-              <img src="" alt="imagen del objetivo 2"> <!-- targeta de objetivo -->
-            </figure>
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.</p>
-          </div>
-          <div class="trans">
-            <figure>
-              <img src="" alt="imagen del objetivo 3"> <!-- targeta de objetivo -->
-            </figure>
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.</p>
-          </div>
-          <div class="trans">
-            <figure>
-              <img src="" alt="imagen del objetivo 4"> <!-- targeta de objetivo -->
-            </figure>
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.</p>
-          </div>
+        <div class="objetivos">
+          <img src="./img/objetivo1.svg" alt="Hombre eligiendo una opcion"> <!-- targeta de objetivo -->
+          <h4>Aprende lo que deseas.</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.</p>
+        </div>
+        <div class="objetivos">
+          <img src="./img/objetivo2.svg" alt="Hombre guardando moneda en alcancia"> <!-- targeta de objetivo -->
+          <h4>Ahorra dinero.</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.</p>
+        </div>
+        <div class="objetivos">
+          <img src="./img/objetivo3.svg" alt="Mujer en computadora tomando clase online"> <!-- targeta de objetivo -->
+          <h4>Aprendizaje flexible.</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.</p>
+        </div>
+        <div class="objetivos">
+          <img src="./img/objetivo4.svg" alt="Mujer mostrando un certificado aprobado" class="objetivo4"> <!-- targeta de objetivo -->
+          <h4>Certificados ilimitados.</h4>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.</p>
         </div>
       </section>
+
+
        <!-- seccion cursos -->
-      <section>
+        <section class="section-cursos">
         <h3>Explora nuestros cursos más populares</h3>
         <div class="containercat">
           <button>Categoria1</button>
@@ -80,45 +82,47 @@
         <div class="bannercursos">
           <div class="cursos"> <!-- targeta de cursos -->
             <figure>
-              <img src="./logos de redes/Logo_de_Facebook.png" alt="imagen del curso 1">
+              <img src="./img/data-analyst.svg" alt="Grupo de personas analizando datos">
             </figure>
             <div class="contenido">
-              <h4>Lorem, ipsum dolor.</h4>
+              <h4>Data Analyst</h4>
              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.</p>
              <a href="#">Ver más...</a>
             </div>
           </div>
           <div class="cursos"> <!-- targeta de cursos -->
             <figure>
-              <img src="./logos de redes/logoAcademiaX.png" alt="imagen del curso 2">
+              <img src="./img/desarrollo-web.svg" alt="Personas llevando logos de html css y javascript">
             </figure>
             <div class="contenido">
-              <h4>Lorem, ipsum dolor.</h4>
+              <h4>Desarrollo web</h4>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.</p>
              <a href="#">Ver más...</a>
            </div>
           </div>
           <div class="cursos"> <!-- targeta de cursos -->
             <figure>
-              <img src="./logos de redes/logoAcademiaX.png" alt="imagen del curso 3">
+              <img src="./img/ux-design.svg" alt="Dos personas diseñando en computadora">
             </figure>
             <div class="contenido">
-              <h4>Lorem, ipsum dolor.</h4>
+              <h4>Diseño UX/UI</h4>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.</p>
               <a href="#">Ver más...</a>
             </div>
           </div>
           <div class="cursos"> <!-- targeta de cursos -->
             <figure>
-              <img src="./logos de redes/logoAcademiaX.png" alt="imagen del curso 4">
+              <img src="./img/ai.svg" alt="mujer con un smartphone conectado a un robot">
             </figure>
             <div class="contenido">
-              <h4>Lorem, ipsum dolor.</h4>
+              <h4>AI for everyone</h4>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.</p>
               <a href="#">Ver más...</a>
             </div>
           </div>
         </section>
+
+
       <!-- Seccion About us -->
       <section class="bannervision"> 
         <h3>Acerca de nosotros</h3>
@@ -142,6 +146,8 @@
           Harum exercitationem, corporis impedit temporibus rerum assumenda, earum doloribus quod quam eum recusandae sed maxime ratione perferendis nemo ad commodi quo totam deleniti aut porro fuga ab architecto. Inventore, alias!</p>
         </div>
       </section>
+    
+    
       <!-- seccion contacto y formulario -->
       <section> 
         <h2>Contáctanos</h2>
@@ -160,19 +166,20 @@
       </section>
     </main>
     <footer>
-        <div class="redes">
-          <a href="x"><img src="./logos de redes/Logo_de_Facebook.png" alt="Facebook"></a>
-          <a href="x"><img src="./logos de redes/instalogo.jpg" alt="Instagram"></a>
-          <a href="x"><img src="./logos de redes/logoreddit.png" alt="Reddit"></a>
-          <a href="x"><img src="./logos de redes/whatslogo.png" alt="whatsup"></a>
-        </div>
         <div>
         <img src="./logos de redes/logoAcademiaX.png" alt="Logo academia X">
         <p>Academia X</p>
         </div>
-        <div class="legales">
+       
+        <div class="texto-footer">
         <p>Todos los derechos reservados. Argentina Programa 4.0 © 2023 Academia X</p>
         <span><a href="X">Política de Privacidad</a> y <a href="">Condiciones de Uso</a></span>
+        </div>
+
+        <div class="redesSociales">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-twitter"></i>
         </div>
     </footer>
 </body>
