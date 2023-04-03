@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap'); /* Import de la fuente */
+
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* colores
+#273469 azul
+#297373 verde
+#a379c9 lila
+#e6e6e6 blanco
+#39393a gris */
+
+/* ------------------------------------HEADER-------------------------------- */
+header {
+    display: flex;
+    margin: 0.5vw 0.5vw;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 3px 2px 5px rgba(22, 22, 22, 0.521);
+    background-color: rgb(59, 59, 58)
+}
+
+/* Nav*/
+nav {
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+    padding: 0.5vw 1vw;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+
+}
+
+header img{
+    width: 7vw;
+    border-radius: 6px;
+    padding: 2px;
+    margin: 0.2vw;
+}
+
+/* --------------------------------------MAIN---------------------------------------- */
+.hero {
+display: flex;
+flex-wrap: wrap;
+margin-top: 3vw;
+}
+
+.textoHero{
+    justify-content: left;
+    height: 600px;
+    width: 60%; 
+    padding: 2vw 2vw;
+    align-items: center;
+}
+
+.imagenHero{
+    justify-content: right;
+    width: 40%;
+    padding: 2vw 1vw;
+}
+
+.imagenHero img{
+    width: 100%;
+    height: 37vw;
+    border-radius: 50%;
+}
+
+.textoHero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textoHero h1 {
+    font-weight:400;
+    font-size: 44px;
+    text-align:left;
+    margin-bottom: 2.5vw;
+}
+
+.textoHero p{
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+}
+
+.inscribete{
+    margin-top: 4vw;
+    margin-bottom: 1.5vw;
+}
