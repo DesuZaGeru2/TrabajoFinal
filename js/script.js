@@ -29,8 +29,8 @@ formularioRegistro.addEventListener("submit", (event) => {
     luego se divide por los milisegundos que hay en un año para obtener la edad. Math.floor redondea el nro */
     edadUsuario = Math.floor((hoy - new Date(formularioRegistro.fechaNac.value)) / millisecsInYear)
     
-    if(formularioRegistro.selectorPais.value !== "select" || edadUsuario < 18) {
-        alert("El usuario es menor de edad o no ha seleccionado ningun país")
+    if(edadUsuario < 18) {
+        alert("El usuario es menor de edad")
     }else{
         usuarios.push({
             nombre: formularioRegistro.nombre.value,
