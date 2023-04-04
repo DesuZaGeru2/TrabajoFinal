@@ -19,6 +19,7 @@ header {
     display: flex;
     margin: 0.5vw 0.5vw;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     border-radius: 5px;
     box-shadow: 3px 2px 5px rgba(22, 22, 22, 0.521);
@@ -108,6 +109,7 @@ margin-bottom: 2vh;
     border: none;
     height:10vh;
     width: 30vw;
+    min-width: 250px;
     background-color: #a379c9;
     padding: 2vh 3vw;
     font-size: 20px;
@@ -115,7 +117,8 @@ margin-bottom: 2vh;
 }
 
 .hero button:hover{
-    background: #bbaaca;
+    background-color: #297373;
+    transition: 1s;
 }
 
 /* -----------------------------------SECCION OBJETIVOS------------------------- */
@@ -290,7 +293,7 @@ footer {
 footer img{
     width: 5vw;
     border-radius: 50%;
-    margin: 2vh 1vw;
+    margin: 1vh 1vw;
 }
 
 footer p{
@@ -325,4 +328,75 @@ footer .legales span a {
 
 footer .legales span a:hover {
     text-decoration: underline;
+}
+
+/* -------------------------------------------------------PAGINA REGISTRO------------------------------------------- */
+
+.registro{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px black;
+    padding: 5vh 3vw;
+    margin: 10vh 15vw;
+    background-color: #e6e6e6;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 2vw;
+}
+
+.inputContainer input{
+    border: none;
+    height: 5vh;
+ }
+
+#dateCountry{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#enviar-btn{
+    margin-top: 3vh;
+    align-self: center;
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    background-color: #a379c9;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#enviar-btn:hover{
+    background-color: #297373;
+    transition: 1s;
+}
+
+#selectorPais{
+    width: 10vw;
+}
+
+/* ------------------------------------------------PAGINA INGRESO------------------------------------------------- */
+
+#enviar-btn-ingreso{
+    margin-top: 3vh;
+    align-self: center;
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    background-color: #a379c9;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#enviar-btn-ingreso:hover{
+    background-color: #297373;
+    transition: 1s;
 }

@@ -1,5 +1,5 @@
 /* -------------------------  REGISTRO ------------------------------------------ */
-const URL_API = "https://restcountries.com/v3.1/all/" //API de paises
+const URL_API = "https://restcountries.com/v3.1/all/" //API de paises para selector
 
     const paisSelect = document.getElementById("selectorPais");
     
@@ -15,6 +15,36 @@ const URL_API = "https://restcountries.com/v3.1/all/" //API de paises
         }
     });
 
-/*     ---------------------------------------------------------------------------- */
+const usuarios = []
+const formularioRegistro = document.getElementById("formulario-registro");
 
+const millisecsInYear = 1000 * 60 * 60 * 24 * 365.25 //cantidad de milisegundos en un año
+let edadUsuario = 0;
+const hoy = new Date() //fecha actual
+
+formularioRegistro.addEventListener("submit", (event) => {
+    event.preventDefault()
+
+    /* Se hace la diferencia en milisegundos de la fecha actual y la fecha de nacimiento, 
+    luego se divide por los milisegundos que hay en un año para obtener la edad. Math.floor redondea el nro */
+    edadUsuario = Math.floor((hoy - new Date(formularioRegistro.fechaNac.value)) / millisecsInYear)
+    
+    if(formularioRegistro.selectorPais.value !== "select" || edadUsuario < 18) {
+        alert("El usuario es menor de edad o no ha seleccionado ningun país")
+    }else{
+        usuarios.push({
+            nombre: formularioRegistro.nombre.value,
+            apellido: formularioRegistro.apellido.value,
+            email: formularioRegistro.email.value,
+            contrasenia: formularioRegistro.contrasenia.value,
+            fechaNac: formularioRegistro.fechaNac.value,
+            pais: formularioRegistro.selectorPais.value
+        })
+    }
+    
+    alert("¡Te has registrado con éxito!")
+    formularioRegistro.reset()
+})
+
+/*     ---------------------------------------------------------------------------- */
 
