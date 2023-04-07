@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Iconos/logoAcademiaX.ico" type="image/x-icon" />
-    <!-- <link rel="stylesheet" href="./stylemain.css"> -->
     <link rel="stylesheet" href="./css/style.css"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Academia X</title>
@@ -15,14 +14,14 @@
     <img src="./img/logoWhite.png" alt="Logo de una silueta de la cabeza con una spinner">
     
     <nav class="headnav">
-      <a href="">Home</a>
-      <a href="">Cursos</a>
-      <a href="">Sobre nosotros</a>
-      <a href="">Contacto</a>
+      <a href="#nav-home">Home</a>
+      <a href="#nav-cursos">Cursos</a>
+      <a href="#nav-about">Sobre nosotros</a>
+      <a href="#nav-contacto">Contacto</a>
       <br>
       <br>
-      <a href="#">Ingresa</a>
-      <a href="#">Regístrate</a>
+      <a href="ingreso.html">Ingresa</a>
+      <a href="registro.html">Regístrate</a>
     
     </nav>
   </header>
@@ -30,14 +29,12 @@
 
       <section class="hero"> <!-- seccion Hero -->
         <div class="textoHero">
-        <h1>Somos una plataforma de aprendizaje en línea con una amplia gama de cursos a tu disposición</h1>
+        <h1 id="nav-home">Somos una plataforma de aprendizaje en línea con una amplia gama de cursos a tu disposición</h1>
         <p>Únete a nuestra comunidad  y descubre el mundo del aprendizaje en línea a tu propio ritmo.</p>
         <br>
         <br>
         <span> <p class="inscribete"><strong> Inscríbete ahora y te regalamos una semana</strong></p></span>
-        <button>
-          <p>Comenzar prueba gratuita</p>
-        </button>
+        <button>Comenzar prueba gratuita</button>
       </div>
       <div class="imagenHero">
         <img src="./Assets/imagen hero.jpg" alt="Frase motivadora nunca dejes de aprender">
@@ -72,7 +69,7 @@
 
        <!-- seccion cursos -->
         <section class="section-cursos">
-        <h3>Explora nuestros cursos más populares</h3>
+        <h3 id="nav-cursos">Explora nuestros cursos más populares</h3>
         <div class="containercat">
           <button>Categoria1</button>
           <button>Categoria2</button>
@@ -125,7 +122,7 @@
 
       <!-- Seccion About us -->
       <section class="bannervision"> 
-        <h3>Acerca de nosotros</h3>
+        <h3 id="nav-about">Acerca de nosotros</h3>
         <div></div>  <!-- banners con la imagen y la transparencia -->
         <h4>Nuestra visión</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor animi alias quasi?</p>
@@ -150,7 +147,7 @@
     
       <!-- seccion contacto y formulario -->
       <section> 
-        <h2>Contáctanos</h2>
+        <h2 id="nav-contacto">Contáctanos</h2>
         <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
         <div class="formbox">
           <form action="">
@@ -165,6 +162,8 @@
         </div>
       </section>
     </main>
+
+    
     <footer>
         <div>
         <img src="./logos de redes/logoAcademiaX.png" alt="Logo academia X">
