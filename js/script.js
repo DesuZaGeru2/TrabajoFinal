@@ -1,5 +1,4 @@
 
-
 /* ------------------------------------BANNER CURSOS------------------------------------ */
 const contenedor = document.getElementById("bannercursos")
 
@@ -77,7 +76,6 @@ btnIdiomas.addEventListener("click", () =>{
     btn = "idiomas"
     mostrarCursos(btn)
 })
-
 
 
 

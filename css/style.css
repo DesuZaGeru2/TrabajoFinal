@@ -114,6 +114,8 @@ margin-bottom: 2vh;
     padding: 2vh 3vw;
     font-size: 20px;
     border-radius: 22px;
+    color: #e6e6e6;
+    font-weight: 600;
 }
 
 .hero button:hover{
@@ -211,22 +213,6 @@ margin-bottom: 2vh;
     position: relative;
 }
 
-.sectionCursos h3 {
-    justify-content: left;
-    font-size: 2em;
-    position: absolute;
-    margin-top: auto;
-}
-
-.sectionCursos button {
-    height:fit-content;
-    margin-right: 5%;
-    width: auto;
-    background-color: #a379c9;
-    margin: 8vh 2% 0% 2%;
-    font-size: 1em;
-}
-
 .cursos {
     min-width: 220px;
     max-width: 250px;
@@ -253,17 +239,91 @@ margin-bottom: 2vh;
 
 /* --------------------------SECCION VISION-------------------- */
 
+.bannervision {
+    margin-top: 8vh;
+    font-size: 1.5rem;
+}
+
+#nav-about {
+    padding-left: 3vw;
+}
+
 .bannervision div {
     width: 100%;
     height: 280px;
-    margin-top: 38px;
-    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)), url(./Assets/nuestra\ vision\ seccion.jpg) no-repeat center center;
-    position: absolute;
+    margin-top: 1vh;
+    color: #e6e6e6;
+    background: linear-gradient(rgba(5,7,12),rgba(5,7,12,0.40)), url(../Assets/nuestra\ vision\ seccion.jpg) no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7% 1.5vw;
 }
 
-.bannervision h4 {
-    position:relative;
-    color: #e6e6e6;
+.bannervision p {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh 7vw;
+}
+
+.presentacion {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 381px;
+    width: 100%;
+}
+
+.presentacion img {
+    position: absolute;
+    width: 40%;
+    height: 100%;   
+}
+
+.presentacion div {
+    position: absolute;
+    width: 60%;
+    padding: 10px;
+}
+
+.teachers {
+    width: 100%;
+    margin: auto;
+    padding: 2vh 3vw;
+}
+
+.teachers div:nth-child(2n) img {
+    left: 100%;
+    transform: translate(-100%,0);
+}
+
+.teachers div:nth-child(2n) div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.teachers div:nth-child(2n+1) div {
+    left: 100%;
+    transform: translate(-100%,0); 
+}
+
+/* -----------------------------SECCION CONTACT------------------ */
+.contact div {
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    padding: 90px 5vw 2vh 3vw;
+}
+
+#nav-contacto {
+    font-size: 1.9rem;
+}
+
+.contact div span {
+    padding-top: 10px;
+    font-size: 1.2rem;
 }
 
 
@@ -308,25 +368,11 @@ footer p{
 
 .texto-footer p, a{
     font-size: small;
-}
-
-footer .legales{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-footer .legales span{
-    margin-right: 15%;
-}
-
-footer .legales span a {
     text-decoration: none;
     color: #e6e6e6;
 }
 
-footer .legales span a:hover {
+.texto-footer span a:hover{
     text-decoration: underline;
 }
 
@@ -400,5 +446,6 @@ footer .legales span a:hover {
     background-color: #297373;
     transition: 1s;
 }
+
 
 
