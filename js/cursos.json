@@ -1,0 +1,95 @@
+[
+    {
+        "nombre" : "Data Analyst",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/data-analyst.svg",
+        "categoria": "informatica"
+    },
+    {
+        "nombre" : "Desarrollo web",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/desarrollo-web.svg",
+        "categoria": "informatica"
+    },
+    {
+        "nombre" : "Diseño UX/UI",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/ux-design.svg",
+        "categoria": "informatica"
+    },
+    {
+        "nombre" : "AI for everyone",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/ai.svg",
+        "categoria": "informatica"
+    },
+    {
+        "nombre" : "Inglés",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/London.svg",
+        "categoria": "idiomas"
+    },
+    {
+        "nombre" : "Chino Mandarín",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/china.svg",
+        "categoria": "idiomas"
+    },
+    {
+        "nombre" : "Francés",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/Paris.svg",
+        "categoria": "idiomas"
+    },
+    {
+        "nombre" : "Japonés",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/Kyoto.svg",
+        "categoria": "idiomas"
+    },
+    {
+        "nombre" : "Marketing",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/marketing.svg",
+        "categoria": "administracion"
+    },
+    {
+        "nombre" : "Ventas",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/ventas.svg",
+        "categoria": "administracion"
+    },
+    {
+        "nombre" : "Gestión de proyectos",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/proyectos.svg",
+        "categoria": "administracion"
+    },
+    {
+        "nombre" : "Finanzas Corporativas",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/finanzas.svg",
+        "categoria": "administracion"
+    },
+    {
+        "nombre" : "Arte",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/arte.svg",
+        "categoria": "humanidades"
+    },
+    {
+        "nombre" : "Psicología",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/psicologia.svg",
+        "categoria": "humanidades"
+    },
+    {
+        "nombre" : "Comunicación",
+        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "img":"./img/comunicacion.svg",
+        "categoria": "humanidades"
+    }
+    
+
+
+]
