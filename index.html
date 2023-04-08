@@ -116,25 +116,27 @@
     
       <!-- seccion contacto y formulario -->
       <section class="contact">
-        <div>
+        <div class="header-contact">
           <h2 id="nav-contacto">Contáctanos</h2>
           <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
         </div>
-        <div class="formbox">
-          <form action="">
-            <div>
+        <div class="contact-box">
+          <form>
+            <div class="inputContainer field-main" >
               <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+              <input type="text" id="nombre" placeholder="Escribe tu Nombre" required>
             </div>
-            <div>
+            <div class="inputContainer field-main">
               <label for="asunto">Asunto</label>
               <input type="text" id="asunto" placeholder="Escribe tu Asunto" required>
             </div>
-            <div>
+            <div class="inputContainer field-main">
               <label for="cuestion">Mensaje</label>
-              <textarea id="cuestion" placeholder="Escribe tu Cuestion" cols="30" rows="9" required></textarea>
+              <textarea id="cuestion" placeholder="Escribe tu Cuestión" cols="30" rows="9" required></textarea>
             </div>
-            <input type="submit" value="Enviar">
+            <div class="inputContainer field-main">
+            <input type="submit" value="Enviar" id="mainform-btn">
+            </div>
           </form>
         </div>
       </section>
@@ -149,7 +151,7 @@
        
         <div class="texto-footer">
         <p>Todos los derechos reservados. Argentina Programa 4.0 © 2023 Academia X</p>
-        <span><a href="X">Política de Privacidad</a> y <a href="">Condiciones de Uso</a></span>
+        <span><a href="./privacidad.html" target="_blank">Política de Privacidad</a> y <a href="./terminos_uso.html" target="_blank">Condiciones de Uso</a></span>
         </div>
 
         <div class="redesSociales">

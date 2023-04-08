@@ -310,10 +310,15 @@ margin-bottom: 2vh;
 }
 
 /* -----------------------------SECCION CONTACT------------------ */
-.contact div {
+.contact {
     display: flex;
-    width: 100%;
-    justify-content:space-between;
+    flex-direction: column;
+}
+
+.header-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 90px 5vw 2vh 3vw;
 }
 
@@ -326,7 +331,32 @@ margin-bottom: 2vh;
     font-size: 1.2rem;
 }
 
+.contact-box {
+    padding: 20vh 15vw;
+}
 
+.contact-box form {
+    background-color: #a379c9;
+    padding: 15px;
+    border: 1px solid #273469;
+    border-radius: 10px;
+    box-shadow: 2px 3px 7px #39393a;
+}
+
+.field-main input,
+.field-main textarea {
+    background: #cdbfda;
+}
+
+#mainform-btn {
+    margin-top: 3vh;
+    align-self:flex-end;
+    width: 10vw;
+    height: 5vh;
+    border: 1px solid #273469;
+    border-radius: 8px;
+    font-weight: 600;
+}
 /* ------------------------------FOOTER-------------------------- */
 
 footer {
@@ -353,7 +383,7 @@ footer {
 footer img{
     width: 5vw;
     border-radius: 50%;
-    margin: 1vh 1vw;
+    margin: 1vh 25%;
 }
 
 footer p{
