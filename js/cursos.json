@@ -32,7 +32,7 @@
     {
         "nombre" : "Chino Mandarín",
         "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
-        "img":"./img/china.svg",
+        "img":"./img/China.svg",
         "categoria": "idiomas"
     },
     {
