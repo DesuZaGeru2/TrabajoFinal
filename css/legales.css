@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* colores
+#273469 azul
+#297373 verde
+#a379c9 lila
+#e6e6e6 blanco
+#39393a gris */
+
+header {
+    display: flex;
+    background-color:#39393a;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0px;
+    color: #e6e6e6;
+}
+
+/* --------------Aside-------------- */
+main {
+    display:flex;
+    flex-direction: row;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    background-color:#39393a;
+    width: fit-content;
+    padding: 3%;
+    color: #e6e6e6;
+}
+
+.aside li {
+    padding-top: 0.5em;
+}
+
+.aside li a {
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+.aside li a:hover {
+    text-decoration:underline;
+}
+
+/* --------------Content-------------- */
+.content {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content div {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content p {
+    margin-top: 1%;
+}
