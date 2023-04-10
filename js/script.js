@@ -17,7 +17,7 @@ fetch("./js/cursos.json")
                 contenedor.innerHTML +=  `
                 <div class="cursos"> 
                     <figure>
-                      <img src="${curso.img}" alt="imagen referente al curso">
+                      <img src="${curso.img}" alt="${curso.alt}">
                     </figure>
                     <div class="contenido">
                       <h4>${curso.nombre}</h4>
@@ -44,7 +44,7 @@ const mostrarCursos = (btn) =>{
                 contenedor.innerHTML +=  `
                 <div class="cursos"> 
                     <figure>
-                      <img src="${curso.img}" alt="imagen referente al curso">
+                      <img src="${curso.img}" alt="${curso.alt}">
                     </figure>
                     <div class="contenido">
                       <h4>${curso.nombre}</h4>
