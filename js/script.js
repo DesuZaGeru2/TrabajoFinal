@@ -77,5 +77,25 @@ btnIdiomas.addEventListener("click", () =>{
     mostrarCursos(btn)
 })
 
+/* ----------------------------- Vision banner ----------------------------- */
 
+let parallax = document.querySelector('.parax');
+let textovision = document.querySelector('.visor');
 
+function scrollparallax() {
+  window.onresize = function() {
+    if (window.innerWidth >= 1100) parax.classList.add('parallax'); /* agrega la clase parallax  */
+    else homeIcon.classList.remove('parallax');
+  }
+  
+  window.onresize = function() {
+    if (window.innerWidth >= 1100) visor.classList.add('efectovisor'); /* agrega la clase efectovisor */
+    else homeIcon.classList.remove('efectovisor');
+  }
+
+  let scrollTop = document.documentElement.scrollTop; /* toma la cantidad de scroll que se hizo */
+  parallax.style.transform ='translateY(' + scrollTop * -0.09+ 'px)'; /* mueve el elemento */
+  textovision.style.transform ='translateY(' + scrollTop * +0.06 + 'px)';
+}
+
+window.addEventListener("scroll",scrollparallax);
