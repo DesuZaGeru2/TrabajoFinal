@@ -33,27 +33,27 @@
         <form id="formulario-registro">
             <div class="inputContainer">
             <label for="nombre">Nombre: </label>
-            <input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombre">
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombre" required>
             </div>
             <div class="inputContainer">
             <label for="apellido">Apellido: </label>
-            <input type="text" name="apellido" placeholder="Ingrese su apellido" id="apellido">
+            <input type="text" name="apellido" placeholder="Ingrese su apellido" id="apellido" required>
             </div>
             <div class="inputContainer">
             <label for="mail">Mail: </label>
-            <input type="text" name="email" placeholder="email@algo.com" id="email">
+            <input type="text" name="email" placeholder="email@algo.com" id="email" required>
             </div>
             <div class="inputContainer">
             <label for="contrasenia">Constraseña: </label>
-            <input type="password" name="contrasenia" id="contrasenia">
+            <input type="password" name="contrasenia" id="contrasenia" required>
             </div>
             <div class="inputContainer" id="dateCountry">
             <label for="fechaDeNacimiento">Fecha de nacimiento: </label>
             <input type="date" id="fechaNac" name="fechaDeNacimiento"
             value="2023-01-01" min="1920-01-01" max="2023-12-31">
             <label for="pais">Seleccione su país: </label>
-            <select name='pais' id="selectorPais">
-                <option value="select" selected>Seleccione un país</option>
+            <select name='pais' id="selectorPais" required>
+                <option value="" selected>Seleccione un país</option>
             </select>
             </div>
             <div class="inputContainer">

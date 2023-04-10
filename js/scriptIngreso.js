@@ -21,11 +21,8 @@ formularioIngreso.addEventListener("submit", (event) =>{
             }
             if (userActive){
                 Toastify({
-            
                     text: "Bienvenido de nuevo " + userName + "!",
-                    
                     duration: 3000
-                    
                     }).showToast();
                     formularioIngreso.reset()
                     setTimeout(()=>{ /* Con esto redirigimos al usuario al index en 3 segundos, para darle 
@@ -33,7 +30,7 @@ formularioIngreso.addEventListener("submit", (event) =>{
                         window.location.href = 'index.html';
                     },3000)
             }else{
-                Swal.fire( /* en caso de que no se hayan encontrado coincidencias, se muestr esta alerta */
+                Swal.fire( /* en caso de que no se hayan encontrado coincidencias, se muestra esta alerta */
                     'Algo salió mal',
                     'E-mail o contraseña incorrecta',
                     'error',
