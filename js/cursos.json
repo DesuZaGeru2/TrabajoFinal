@@ -1,92 +1,107 @@
 [
     {
         "nombre" : "Data Analyst",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Domina el análisis de datos y toma decisiones informadas utilizando herramientas como SQL, Power BI y análisis de comportamiento digital.",
         "img":"./img/data-analyst.svg",
+        "alt":"grupo de parsonas analizando datos",
         "categoria": "informatica"
     },
     {
         "nombre" : "Desarrollo web",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Aprende a crear sitios web dinámicos y atractivos con habilidades en HTML, CSS, JavaScript y frameworks populares.",
         "img":"./img/desarrollo-web.svg",
+        "alt":"tres personas cargando los logos de html, css y javascript",
         "categoria": "informatica"
     },
     {
         "nombre" : "Diseño UX/UI",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Diseña interfaces digitales eficaces y atractivas para mejorar la experiencia del usuario.",
         "img":"./img/ux-design.svg",
+        "alt":"dos personas diseñando en computadoras",
         "categoria": "informatica"
     },
     {
         "nombre" : "AI for everyone",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Aprende los conceptos fundamentales y aplicaciones básicas de la Inteligencia Artificial (IA).",
         "img":"./img/ai.svg",
+        "alt":"mujer manejando un robot desde su celular",
         "categoria": "informatica"
     },
     {
         "nombre" : "Inglés",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Mejora tus habilidades lingüísticas en el idioma global por excelencia, comunícarte de manera efectiva tanto en el ámbito personal como profesional.",
         "img":"./img/London.svg",
+        "alt":"mapa de inglaterra con el puente de la torre de londres dibujado",
         "categoria": "idiomas"
     },
     {
         "nombre" : "Chino Mandarín",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Aprende el idioma de la nación más poblada del mundo y mejora tus habilidades de comunicación con una cultura fascinante y una economía global en auge.",
         "img":"./img/China.svg",
+        "alt":"mapa de china con dibujos de pagodas",
         "categoria": "idiomas"
     },
     {
         "nombre" : "Francés",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Aprende el idioma oficial de muchos organismos internacionales y uno de los idiomas más hablados en el mundo de los negocios y la moda.",
         "img":"./img/Paris.svg",
+        "alt":"mapa de francia con el arco del triunfo y la torre eiffel dibujados",
         "categoria": "idiomas"
     },
     {
         "nombre" : "Japonés",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Sumérgete en la cultura tecno-pop de Japón y mejora tus habilidades comunicativas para viajar o trabajar en una de las economías más importantes del mundo.",
         "img":"./img/Kyoto.svg",
+        "alt":"mapa de japón con dibujo de un arco japonés",
         "categoria": "idiomas"
     },
     {
         "nombre" : "Marketing",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Aprende a promocionar productos y servicios en línea utilizando técnicas de marketing digital.",
         "img":"./img/marketing.svg",
+        "alt":"mujer analizando datos en un celular",
         "categoria": "administracion"
     },
     {
         "nombre" : "Ventas",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Aprende a vender con éxito usando técnicas de persuasión, negociación y relación con el cliente ",
         "img":"./img/ventas.svg",
+        "alt":"dos hombres dándose la mano, cerrando un acuerdo",
         "categoria": "administracion"
     },
     {
         "nombre" : "Gestión de proyectos",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Desarrolla habilidades para liderar y gestionar proyectos con éxito desde su inicio hasta su cierre, utilizando herramientas y técnicas de planificación, seguimiento y control.",
         "img":"./img/proyectos.svg",
+        "alt":"mujer rodeada de graficas de barras y de línea",
         "categoria": "administracion"
     },
     {
         "nombre" : "Finanzas Corporativas",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Aprende a administrar y tomar decisiones financieras acertadas en una empresa, desde la planificación hasta la evaluación de resultados.",
         "img":"./img/finanzas.svg",
+        "alt":"hombre mostrando un grafico de barras en una pantalla",
         "categoria": "administracion"
     },
     {
         "nombre" : "Arte",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Desarrolla tu creatividad y habilidades artísticas en este curso práctico y teórico. Aprende técnicas, teoría y expresión para crear obras únicas.",
         "img":"./img/arte.svg",
+        "alt":"mujer frente a un grupo de arboles con una hoja en la mano",
         "categoria": "humanidades"
     },
     {
         "nombre" : "Psicología",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Explora la mente humana y aprende cómo se comporta, piensa y siente, y cómo aplicar estos conocimientos en la vida diaria.",
         "img":"./img/psicologia.svg",
+        "alt":"mujer rodeada por círculos y figuras abstractas",
         "categoria": "humanidades"
     },
     {
         "nombre" : "Comunicación",
-        "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, porro.",
+        "descripcion": "Aprende a transmitir ideas de manera efectiva a través de diferentes medios y audiencias, incluyendo presentaciones, escritura y redes sociales.",
         "img":"./img/comunicacion.svg",
+        "alt":"dos hombres en un escritorio dándose la mano",
         "categoria": "humanidades"
     }
     
