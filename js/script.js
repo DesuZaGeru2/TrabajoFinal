@@ -30,8 +30,6 @@ fetch("./js/cursos.json")
     })
 
 
-
-
 /* ----------------------------- Seleccion de categorías----------------------------- */
 const mostrarCursos = (btn) =>{
     fetch("./js/cursos.json")
