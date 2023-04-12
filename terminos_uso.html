@@ -9,15 +9,15 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img src="./img/logoWhite.png" alt="Logo de una silueta de la cabeza con una spinner">
-        </a>
-        <h1>Academia X</h1>
+        <img src="./img/logoWhite.png" alt="Logo de una silueta de la cabeza con una spinner">
     </header>
     <main>
-        <div class="aside">
-            <h2>Contenidos</h2>
-            <ol>
+        <aside>
+            <div>
+                <h2>Contenidos</h2>
+                <button id="hide-btn">=</button>
+            </div>
+            <ol id="content-list">
                 <li><a href="#intro">Introducción</a></li>
                 <li><a href="#cookie-use">Cookies</a></li>
                 <li><a href="#license">Licencia</a></li>
@@ -26,11 +26,11 @@
                 <li><a href="#rights-reserved">Derechos reservados y responsabilidades de terceros</a></li>
                 <li><a href="#exemption">Exención de responsabilidad</a></li>
             </ol>
-        </div>
+        </aside>
         <div class="content">
             <div id="intro">
                 <span>1</span>
-                <p>¡Bienvenido a AcademiaX.org!</p>
+                <p><strong>¡Bienvenido a AcademiaX.org!</strong></p>
                 <br>
                 <p>Estos términos y condiciones describen las reglas y regulaciones para el uso del sitio web de Academia X, ubicado en <a href="./index.html" target="_blank">https://academiax.org.</a></p>
                 <br>
@@ -38,7 +38,7 @@
             </div>
             <div id="cookie-use">
                 <span>2</span>
-                <p>Cookies:</p>
+                <p><strong>Cookies:</strong></p>
                 <p>El sitio web utiliza cookies para ayudar a personalizar tu experiencia en línea. Al acceder a AcademiaX.org, aceptaste utilizar las cookies necesarias.</p>
                 <br>
                 <p>Una cookie es un archivo de texto que un servidor de páginas web coloca en tu disco duro. Las cookies no se pueden utilizar para ejecutar programas o enviar virus a tu computadora. Las cookies se te asignan de forma exclusiva y solo un servidor web en el dominio que emitió la cookie puede leerlas.</p>
@@ -47,7 +47,7 @@
             </div>
             <div id="license">
                 <span>3</span>
-                <p>Licencia:</p>
+                <p><strong>Licencia:</strong></p>
                 <p>A menos que se indique lo contrario, Academia X y/o sus licenciantes poseen los derechos de propiedad intelectual de todo el material en AcademiaX.org. Todos los derechos de propiedad intelectual son reservados. Puedes acceder desde AcademiaX.org para tu uso personal sujeto a las restricciones establecidas en estos términos y condiciones.</p>
                 <br>
                 <p>No debes:</p>
@@ -65,7 +65,7 @@
             </div>
             <div id="warranties">
                 <span>4</span>
-                <p>Garantizas y declaras que:</p>
+                <p><strong>Garantizas y declaras que:</strong></p>
                 <br>
                 <p>Tienes derecho a publicar comentarios en nuestro sitio web y tienes todas las licencias y consentimientos necesarios para hacerlo;
                 Los comentarios no invaden ningún derecho de propiedad intelectual, incluidos, entre otros, los derechos de autor, patentes o marcas comerciales de terceros;</p>
@@ -75,7 +75,7 @@
             </div>
             <div id="hyperliked">
                 <span>5</span>
-                <p>Hipervínculos a nuestro contenido:</p>
+                <p><strong>Hipervínculos a nuestro contenido:</strong></p>
                 <p>Las siguientes organizaciones pueden vincularse a nuestro sitio web sin aprobación previa por escrito:</p>
                 <br>
                 <p>Agencias gubernamentales;</p>
@@ -109,22 +109,22 @@
             </div>
             <div id="rights-reserved">
                 <span>6</span>
-                <p>Reserva de derechos:</p>
+                <p><strong>Reserva de derechos:</strong></p>
                 <br>
                 <p>Nos reservamos el derecho de solicitar que elimines todos los enlaces o cualquier enlace en particular a nuestro sitio web. Apruebas eliminar de inmediato todos los enlaces a nuestro sitio web cuando se solicite. También nos reservamos el derecho de modificar estos términos y condiciones y su política de enlaces en cualquier momento. Al vincular continuamente a nuestro sitio web, aceptas estar vinculado y seguir estos términos y condiciones de vinculación.</p>
                 <br>
-                <p>Eliminación de enlaces de nuestro sitio web:</p>
+                <p><strong>Eliminación de enlaces de nuestro sitio web:</strong></p>
                 <p>Si encuentras algún enlace en nuestro sitio que sea ofensivo por cualquier motivo, puedes contactarnos e informarnos en cualquier momento. Consideraremos las solicitudes para eliminar enlaces, pero no estamos obligados a hacerlo ni a responder directamente.</p>
                 <br>
                 <p>No nos aseguramos de que la información de este sitio web sea correcta. No garantizamos su integridad o precisión, ni prometemos asegurarnos de que el sitio web permanezca disponible o que el material en el sitio se mantenga actualizado.</p>
                 <br>
-                <p>Responsabilidad del contenido:</p>
+                <p><strong>Responsabilidad del contenido:</strong></p>
                 <br>
                 <p>No seremos responsables de ningún contenido que aparezca en tu sitio web. Aceptas protegernos y defendernos contra todas las reclamaciones que se presenten en tu sitio web. Ningún enlace(s) debe aparecer en ningún sitio web que pueda interpretarse como difamatorio, obsceno o criminal, o que infrinja, de otra manera viole o defienda la infracción u otra violación de los derechos de terceros.</p>
             </div>
             <div id="exemption">
                 <span>7</span>
-                <p>Exención de responsabilidad:</p>
+                <p><strong>Exención de responsabilidad:</strong></p>
                 <br>
                 <p>En la medida máxima permitida por la ley aplicable, excluimos todas las representaciones, garantías y condiciones relacionadas con nuestro sitio web y el uso de este. Nada en este descargo de responsabilidad:</p>
                 <br>
@@ -137,7 +137,11 @@
                 <br>
                 <p>Siempre que el sitio web y la información y los servicios en el sitio se proporcionen de forma gratuita, no seremos responsables de ninguna pérdida o daño de cualquier naturaleza.</p>
             </div>
-
+        </div>
+    </main>
+    <script src="./js/legales.js"></script>
+</body>
+</html>
 
 
 

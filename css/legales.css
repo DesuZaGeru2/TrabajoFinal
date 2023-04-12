@@ -12,12 +12,13 @@
 #39393a gris */
 
 header {
-    display: flex;
     background-color:#39393a;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 6px 0px;
     color: #e6e6e6;
+    position:fixed;
+    width: 100vw;
 }
 
 /* --------------Aside-------------- */
@@ -26,25 +27,48 @@ main {
     flex-direction: row;
 }
 
-.aside {
-    display: flex;
-    flex-direction: column;
+aside {
     background-color:#39393a;
-    width: fit-content;
-    padding: 3%;
+    height: fit-content;
+    width: 200px;
+    margin-top: 112px;
+    padding: 0px 4vw 2vh 4vw;
     color: #e6e6e6;
+    position:fixed;
 }
 
-.aside li {
+aside div {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color:#e6e6e6;
+    border: solid 1px #273469;
+    border-radius:4px;
+    align-content: center;
+    width: 2rem;
+    color: #273469;
+}
+
+aside ol {
+    display:none;
+}
+
+.show {
+    display: block;
+}
+
+aside li {
     padding-top: 0.5em;
 }
 
-.aside li a {
+aside li a {
     text-decoration: none;
     color: #e6e6e6;
 }
 
-.aside li a:hover {
+aside li a:hover {
     text-decoration:underline;
 }
 
@@ -62,6 +86,10 @@ main {
     align-items: center;
 }
 
+.content span {
+    align-self: self-start;
+    margin: 5vh 0vw;
+}
 .content p {
     margin-top: 1%;
 }
