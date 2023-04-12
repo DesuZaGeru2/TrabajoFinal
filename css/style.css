@@ -186,14 +186,27 @@ margin-bottom: 2vh;
 }
 
 .section-cursos button {
-    border: 1px solid #273469;
-    border-radius: 5px;
-    padding: 5px;
+    border: none;
     height:fit-content;
+    margin-right: 5%;
     width: auto;
     background-color: #a379c9;
-    margin: 4% 2% 2% 2%;
+    margin: 8vh 2% 0% 2%;
     font-size: 1em;
+    padding: 0.6vh 0.6vw;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.section-cursos button:hover{
+    background-color:#297373;
+    transition: 1s;
+} 
+
+.containercat{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 .bannercursos {
@@ -212,7 +225,7 @@ margin-bottom: 2vh;
     margin: 5% 2% 1% 2%;
     border-radius: 6px;
     background: #a379c9;
-    box-shadow: 4px 3px 6px #273469;
+     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default; /* para que no muestre el cursor de texto */
     transition: all 400ms ease;
 }
@@ -228,6 +241,27 @@ margin-bottom: 2vh;
     height: 150px; /* ver figma */
 }
 
+.cursos h4{
+    font-size: larger;
+    text-align: left;
+    font-weight: 800;
+    margin-top: 1vh;
+    padding-left: 1.5vw;
+}
+
+.cursos p {
+    padding: 1vh 1.5vw;
+}
+.cursos a{
+    text-align: center;
+    font-weight: 700;
+    padding: 1vh 1.5vw;
+}
+
+.cursos a:hover{
+    color: #273469;
+}
+
 .contenido h4,
 .contenido p,
 .contenido a{
@@ -238,18 +272,6 @@ margin-bottom: 2vh;
 
 .contenido h4 {
     font-size: 1.4em;
-}
-
-
-
-/* --------------------------SECCION VISION-------------------- */
-
-.cursos h4{
-    font-size: larger;
-    text-align: left;
-    font-weight: 800;
-    margin-top: 1vh;
-    padding-left: 1.5vw;
 }
 
 
@@ -465,11 +487,9 @@ footer p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 20px;
-    box-shadow: 0px 0px 7px black;
     padding: 5vh 3vw;
     margin: 10vh 15vw;
-    background-color: #e6e6e6;
+    background-color: white;
 }
 
 .inputContainer{
@@ -481,6 +501,7 @@ footer p{
 .inputContainer input{
     border: none;
     height: 5vh;
+    border-bottom: 1px solid black;
  }
 
 #dateCountry{
