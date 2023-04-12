@@ -241,7 +241,20 @@ margin-bottom: 2vh;
 }
 
 
+
 /* --------------------------SECCION VISION-------------------- */
+
+.cursos h4{
+    font-size: larger;
+    text-align: left;
+    font-weight: 800;
+    margin-top: 1vh;
+    padding-left: 1.5vw;
+}
+
+
+/* --------------------------SECCION VISION-------------------- */
+
 
 .bannervision {
     margin-top: 8vh;

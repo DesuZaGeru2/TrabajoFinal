@@ -94,7 +94,7 @@ function scrollparallax() {
   }
 
   let scrollTop = document.documentElement.scrollTop; /* toma la cantidad de scroll que se hizo */
-  parallax.style.transform ='translateY(' + scrollTop * -0.09+ 'px)'; /* mueve la imagen del banner*/
+  parallax.style.transform =`translateY(${scrollTop * -0.09}px)`; /* mueve la imagen del banner*/
   textovision.style.transform ='translateY(' + scrollTop * +0.06 + 'px)'; /* mueve el texto del banner */
 }
 
