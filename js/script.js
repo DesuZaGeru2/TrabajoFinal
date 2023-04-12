@@ -1,4 +1,3 @@
-
 /* ------------------------------------BANNER CURSOS------------------------------------ */
 const contenedor = document.getElementById("bannercursos")
 
@@ -29,8 +28,6 @@ fetch("./js/cursos.json")
                 }
             }
     })
-
-
 
 
 /* ----------------------------- Seleccion de categorías----------------------------- */
@@ -77,6 +74,7 @@ btnIdiomas.addEventListener("click", () =>{
     mostrarCursos(btn)
 })
 
+
 /* ----------------------------- Vision banner ----------------------------- */
 
 let parallax = document.querySelector('.parax');
@@ -85,17 +83,17 @@ let textovision = document.querySelector('.visor');
 function scrollparallax() {
   window.onresize = function() {
     if (window.innerWidth >= 1100) parax.classList.add('parallax'); /* agrega la clase parallax  */
-    else homeIcon.classList.remove('parallax');
+    else parax.classList.remove('parallax');
   }
   
   window.onresize = function() {
     if (window.innerWidth >= 1100) visor.classList.add('efectovisor'); /* agrega la clase efectovisor */
-    else homeIcon.classList.remove('efectovisor');
+    else visor.classList.remove('efectovisor');
   }
 
   let scrollTop = document.documentElement.scrollTop; /* toma la cantidad de scroll que se hizo */
-  parallax.style.transform ='translateY(' + scrollTop * -0.09+ 'px)'; /* mueve el elemento */
-  textovision.style.transform ='translateY(' + scrollTop * +0.06 + 'px)';
+  parallax.style.transform =`translateY(${scrollTop * -0.09}px)`; /* mueve la imagen del banner*/
+  textovision.style.transform ='translateY(' + scrollTop * +0.06 + 'px)'; /* mueve el texto del banner */
 }
 
 window.addEventListener("scroll",scrollparallax);

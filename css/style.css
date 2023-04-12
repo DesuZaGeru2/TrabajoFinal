@@ -18,7 +18,6 @@
 header {
     display: flex;
     margin: 0.5vw 0.5vw;
-    padding: 1vh 0.5vw;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -80,7 +79,7 @@ margin-bottom: 2vh;
 
 .imagenHero img{
     width: 100%;
-    height: 100%;
+    height: 37vw;
     border-radius: 50%;
 }
 
@@ -130,7 +129,7 @@ margin-bottom: 2vh;
     background-color: #273469;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding: 3vh 5vw;
     margin-bottom: 2vh;
 }
@@ -155,7 +154,8 @@ margin-bottom: 2vh;
     background-color: #e6e6e6;
     align-items: center;
     justify-content: space-between;
-    margin: 2vh 1vw;
+    margin-bottom: 4vh;
+    margin-top: 2vh;
     box-shadow: 5px 5px 4px rgba(22, 22, 22, 0.521);
 }
 
@@ -168,6 +168,7 @@ margin-bottom: 2vh;
     text-align: center;
     align-self: flex-end;
     margin-bottom: 2vh;
+    padding-bottom: 3vh;
 }
 
 .objetivos img{
@@ -181,6 +182,8 @@ margin-bottom: 2vh;
 .section-cursos{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 5vh;
     margin-top: 8vh;
     padding: 1vh 3vw;
 }
@@ -188,17 +191,17 @@ margin-bottom: 2vh;
 .section-cursos h3 {
     justify-content: center;
     font-size: 2em;
+    position: absolute;
     margin-top: auto;
 }
 
 .section-cursos button {
-    border: 1px solid #273469;
-    border-radius: 5px;
-    padding: 5px;
+    border: none;
     height:fit-content;
+    margin-right: 5%;
     width: auto;
     background-color: #a379c9;
-    margin: 4% 2% 2% 2%;
+    margin: 8vh 2% 0% 2%;
     font-size: 1em;
     padding: 0.6vh 0.6vw;
     color: white;
@@ -221,25 +224,23 @@ margin-bottom: 2vh;
     height: fit-content;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(250px,100%), 1fr));
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
-    justify-items: center;
+    grid-auto-rows: minmax(100px, auto);
+    position: relative;
 }
 
 .cursos {
+    min-width: 220px;
     max-width: 250px;
     height: 366px;
     margin: 5% 2% 1% 2%;
     border-radius: 6px;
+    overflow: hidden;
     background: #a379c9;
-    box-shadow: 4px 3px 6px #273469;
-    cursor: default; /* para que no muestre el cursor de texto */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default; /* para que no muestre el cursos de texto */
     transition: all 400ms ease;
-}
-
-.cursos:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .cursos img {
@@ -248,22 +249,11 @@ margin-bottom: 2vh;
     height: 150px; /* ver figma */
 }
 
-.contenido h4,
-.contenido p,
-.contenido a{
-    margin-top: 15px;
-    color: #39393a;
-    padding: 5%;
+.cursos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.contenido h4 {
-    font-size: 1.4em;
-}
-
-
-
-/* --------------------------SECCION VISION-------------------- */
-=======
 .cursos h4{
     font-size: larger;
     text-align: left;
@@ -285,7 +275,21 @@ margin-bottom: 2vh;
     color: #273469;
 }
 
-/* -------------------------------------------SECCION VISION-------------------------------------- */
+
+.contenido h4,
+.contenido p,
+.contenido a{
+    margin-top: 15px;
+    color: #39393a;
+    padding: 5%;
+}
+
+.contenido h4 {
+    font-size: 1.4em;
+}
+
+
+/* --------------------------SECCION VISION-------------------- */
 
 
 .bannervision {
@@ -307,19 +311,8 @@ margin-bottom: 2vh;
     align-items: center;
 }
 
-
 .parax {
     position: absolute;
-
-.bannervision h4{
-    font-size: larger;
-    font-weight: 700;
-}
-
-.presentacion {
-    display: flex;
-    position: relative;
-    align-items: center;
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgb(5, 7, 12),rgba(5, 7, 12, 0.384)), url(../Assets/nuestra\ vision\ seccion.jpg) no-repeat center center;
