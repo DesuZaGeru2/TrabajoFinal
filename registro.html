@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="shortcut icon" href="./Iconos/logoAcademiaX.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -29,26 +28,39 @@
     </header>
     <!------------------------------------ MAIN ---------------------------------------->
     <main>
-        <label for="saludo" id="ingresoSaludo"></label>
         <div class="registro">
-            <h2>Ingresa</h2>
-        <form id="formularioIngreso">
+            <h2>Regístrate</h2>
+        <form id="formulario-registro">
             <div class="inputContainer">
-            <label for="mail-ingreso">Mail: </label>
-            <input type="text" name="email" placeholder="email@algo.com" id="emailIngreso" required>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombre" required>
             </div>
             <div class="inputContainer">
-            <label for="password">Contraseña: </label>
-            <input type="password" id="contraseniaIngreso" required>
+            <label for="apellido">Apellido: </label>
+            <input type="text" name="apellido" placeholder="Ingrese su apellido" id="apellido" required>
             </div>
             <div class="inputContainer">
-            <input type="submit" value="Enviar" id="enviar-btn-ingreso">
+            <label for="mail">Mail: </label>
+            <input type="text" name="email" placeholder="email@algo.com" id="email" required>
+            </div>
+            <div class="inputContainer">
+            <label for="contrasenia">Constraseña: </label>
+            <input type="password" name="contrasenia" id="contrasenia" required>
+            </div>
+            <div class="inputContainer" id="dateCountry">
+            <label for="fechaDeNacimiento">Fecha de nacimiento: </label>
+            <input type="date" id="fechaNac" name="fechaDeNacimiento"
+            value="2023-01-01" min="1920-01-01" max="2023-12-31">
+            <label for="pais">Seleccione su país: </label>
+            <select name='pais' id="selectorPais" required>
+                <option value="" selected>Seleccione un país</option>
+            </select>
+            </div>
+            <div class="inputContainer">
+            <input type="submit" value="Enviar" id="enviar-btn">
             </div>
         </form>
-        </div>
-        <div>
-            
-        </div>
+    </div>
     </main>
     <!------------------------------------- FOOTER ---------------------------------------->
     <footer>
@@ -69,8 +81,7 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/scriptIngreso.js"></script>
+    <script src="./js/scriptRegistro.js"></script>
 </body>
 </html>
