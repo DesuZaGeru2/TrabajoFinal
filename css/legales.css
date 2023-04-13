@@ -13,10 +13,8 @@
 
 header {
     background-color:#39393a;
-    justify-content: center;
     text-align: center;
     padding: 6px 0px;
-    color: #e6e6e6;
     position:fixed;
     width: 100vw;
 }
@@ -25,55 +23,62 @@ header {
 main {
     display:flex;
     flex-direction: row;
+    margin:0;
+    padding:0;
 }
 
-aside {
-    background-color:#39393a;
-    height: fit-content;
-    width: 200px;
-    margin-top: 112px;
-    padding: 0px 4vw 2vh 4vw;
-    color: #e6e6e6;
+#content-list {
     position:fixed;
+    width: 250px;
+    height: 100%;
+    background: #39393a;
+    padding-top: 120px;
+    left: -250px;
+    transition:all 450ms linear;
 }
 
-aside div {
-    display: flex;
-    justify-content: space-around;
+#content-list.show {
+    left:0;
 }
 
-button {
-    background-color:#e6e6e6;
-    border: solid 1px #273469;
-    border-radius:4px;
-    align-content: center;
-    width: 2rem;
-    color: #273469;
-}
-
-aside ol {
-    display:none;
-}
-
-.show {
-    display: block;
-}
-
-aside li {
-    padding-top: 0.5em;
-}
-
-aside li a {
-    text-decoration: none;
+#content-list * {
     color: #e6e6e6;
+    text-decoration: none;
+    padding-bottom: 7px;
 }
 
-aside li a:hover {
-    text-decoration:underline;
+#content-list h2 {
+    display:flex;
+    justify-content: center;
+}
+
+#content-list .contentBar {
+    position:absolute;
+    margin: 0px 0px 0px 250px;
+}
+
+.contentBar #hide_btn {
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    background-color: #39393a;
+    padding-bottom: 0px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+}
+
+#content-list ol {
+    padding: 15px 5px 0px 25px;
+}
+
+#content-list ol li a:hover {
+    text-decoration: underline;
 }
 
 /* --------------Content-------------- */
 .content {
+    margin-left: 3rem;
+    margin-top: 100px;
     padding: 2%;
     display: flex;
     flex-direction: column;
@@ -88,7 +93,7 @@ aside li a:hover {
 
 .content span {
     align-self: self-start;
-    margin: 5vh 0vw;
+    margin: 2vh 0vw;
 }
 .content p {
     margin-top: 1%;
