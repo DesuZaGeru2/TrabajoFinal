@@ -152,7 +152,6 @@ margin-bottom: 2vh;
     flex-direction: column;
     width: 258px;
     height: 320px;
-    /* border: 1px solid black; */
     border-radius: 10px;
     background-color: #e6e6e6;
     align-items: center;
@@ -171,6 +170,7 @@ margin-bottom: 2vh;
     text-align: center;
     align-self: flex-end;
     margin-bottom: 2vh;
+    padding-bottom: 3vh;
 }
 
 .objetivos img{
@@ -262,15 +262,18 @@ margin-bottom: 2vh;
     font-weight: 800;
     margin-top: 1vh;
     padding-left: 1.5vw;
+    color: black;
 }
 
 .cursos p {
     padding: 1vh 1.5vw;
+    color: black;
 }
 .cursos a{
     text-align: center;
     font-weight: 700;
     padding: 1vh 1.5vw;
+    color: white;
 }
 
 .cursos a:hover{
