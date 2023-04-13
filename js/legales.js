@@ -1,17 +1,8 @@
-/* btn */
+/* Btn menú de contenidos */
 
-let content_btn = document.getElementById('hide-btn');
-let contentlist = document.getElementById('content-list');
+let contenedorBtn = document.querySelector('.contentBar');
 
-content_btn.addEventListener('click', toogle_list);
+contenedorBtn.addEventListener('click', function() {
+    document.getElementById('content-list').classList.toggle('show');
+});
 
-function toogle_list() {
-    contentlist.classList.toggle('show');
-
-    if(contentlist.classList.contains('show')) {
-        hide-btn.innerHTML == "sho";
-    }
-    else {
-        hide-btn.innerHTML== "hide";
-    }
-}

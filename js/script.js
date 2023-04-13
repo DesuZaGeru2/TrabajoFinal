@@ -77,23 +77,18 @@ btnIdiomas.addEventListener("click", () =>{
 
 /* ----------------------------- Vision banner ----------------------------- */
 
-let parallax = document.querySelector('.parax');
-let textovision = document.querySelector('.visor');
+let image_parallax = document.querySelector('.parax');
+let texto_vision = document.querySelector('.visor');
 
-function scrollparallax() {
-  window.onresize = function() {
-    if (window.innerWidth >= 1100) parax.classList.add('parallax'); /* agrega la clase parallax  */
-    else parax.classList.remove('parallax');
+if (window.innerWidth > 900) {
+  document.querySelector('.parax').classList.add('parallax');
+  texto_vision.classList.add('textovision');
+  function scrollparallax() {
+    let scrollTop = document.documentElement.scrollTop;
+    image_parallax.style.transform = 'translateY(' + scrollTop * -0.09 + 'px)';
+    texto_vision.style.transform = 'translateY(' + scrollTop * 0.06 + 'px)'; 
   }
-  
-  window.onresize = function() {
-    if (window.innerWidth >= 1100) visor.classList.add('efectovisor'); /* agrega la clase efectovisor */
-    else visor.classList.remove('efectovisor');
-  }
-
-  let scrollTop = document.documentElement.scrollTop; /* toma la cantidad de scroll que se hizo */
-  parallax.style.transform =`translateY(${scrollTop * -0.09}px)`; /* mueve la imagen del banner*/
-  textovision.style.transform ='translateY(' + scrollTop * +0.06 + 'px)'; /* mueve el texto del banner */
 }
 
+window.addEventListener("resize", () => {window.location.reload()});
 window.addEventListener("scroll",scrollparallax);
