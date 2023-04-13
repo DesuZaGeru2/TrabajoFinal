@@ -1,4 +1,3 @@
-
 /* ------------------------------------BANNER CURSOS------------------------------------ */
 const contenedor = document.getElementById("bannercursos")
 
@@ -29,8 +28,6 @@ fetch("./js/cursos.json")
                 }
             }
     })
-
-
 
 
 /* ----------------------------- Seleccion de categorías----------------------------- */
@@ -78,4 +75,20 @@ btnIdiomas.addEventListener("click", () =>{
 })
 
 
+/* ----------------------------- Vision banner ----------------------------- */
 
+let image_parallax = document.querySelector('.parax');
+let texto_vision = document.querySelector('.visor');
+
+if (window.innerWidth > 900) {
+  document.querySelector('.parax').classList.add('parallax');
+  texto_vision.classList.add('textovision');
+  function scrollparallax() {
+    let scrollTop = document.documentElement.scrollTop;
+    image_parallax.style.transform = 'translateY(' + scrollTop * -0.09 + 'px)';
+    texto_vision.style.transform = 'translateY(' + scrollTop * 0.06 + 'px)'; 
+  }
+}
+
+window.addEventListener("resize", () => {window.location.reload()});
+window.addEventListener("scroll",scrollparallax);

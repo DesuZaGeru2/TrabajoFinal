@@ -12,44 +12,73 @@
 #39393a gris */
 
 header {
-    display: flex;
     background-color:#39393a;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 6px 0px;
-    color: #e6e6e6;
+    position:fixed;
+    width: 100vw;
 }
 
 /* --------------Aside-------------- */
 main {
     display:flex;
     flex-direction: row;
+    margin:0;
+    padding:0;
 }
 
-.aside {
-    display: flex;
-    flex-direction: column;
-    background-color:#39393a;
-    width: fit-content;
-    padding: 3%;
+#content-list {
+    position:fixed;
+    width: 250px;
+    height: 100%;
+    background: #39393a;
+    padding-top: 120px;
+    left: -250px;
+    transition:all 450ms linear;
+}
+
+#content-list.show {
+    left:0;
+}
+
+#content-list * {
     color: #e6e6e6;
-}
-
-.aside li {
-    padding-top: 0.5em;
-}
-
-.aside li a {
     text-decoration: none;
-    color: #e6e6e6;
+    padding-bottom: 7px;
 }
 
-.aside li a:hover {
-    text-decoration:underline;
+#content-list h2 {
+    display:flex;
+    justify-content: center;
+}
+
+#content-list .contentBar {
+    position:absolute;
+    margin: 0px 0px 0px 250px;
+}
+
+.contentBar #hide_btn {
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    background-color: #39393a;
+    padding-bottom: 0px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+}
+
+#content-list ol {
+    padding: 15px 5px 0px 25px;
+}
+
+#content-list ol li a:hover {
+    text-decoration: underline;
 }
 
 /* --------------Content-------------- */
 .content {
+    margin-left: 3rem;
+    margin-top: 100px;
     padding: 2%;
     display: flex;
     flex-direction: column;
@@ -62,6 +91,10 @@ main {
     align-items: center;
 }
 
+.content span {
+    align-self: self-start;
+    margin: 2vh 0vw;
+}
 .content p {
     margin-top: 1%;
 }
