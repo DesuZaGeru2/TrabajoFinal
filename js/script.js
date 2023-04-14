@@ -1,81 +1,59 @@
 /* ------------------------------------BANNER CURSOS------------------------------------ */
+const DBCursos_ROUTE = "./js/cursos.json"
 const contenedor = document.getElementById("bannercursos")
+const cursos = []
 
 const btnInformatica = document.getElementById("informatica")
 const btnAdministracion = document.getElementById("administracion")
 const btnHumanidades = document.getElementById("humanidades")
 const btnIdiomas = document.getElementById("idiomas")
 
-
-/* ---------------------------------Categoria por defecto-------------------------------- */
-fetch("./js/cursos.json")
-    .then(response => response.json())
-    .then(data => {
-            for(const curso of data){
-                if(curso.categoria == "informatica"){
-                contenedor.innerHTML +=  `
-                <div class="cursos"> 
-                    <figure>
-                      <img src="${curso.img}" alt="${curso.alt}">
-                    </figure>
-                    <div class="contenido">
-                      <h4>${curso.nombre}</h4>
-                     <p>${curso.descripcion}</p>
-                     <a href="#">Ver más...</a>
-                    </div>
-                  </div>
-                `
-                }
-            }
-    })
-
-
-/* ----------------------------- Seleccion de categorías----------------------------- */
-const mostrarCursos = (btn) =>{
-    fetch("./js/cursos.json")
-    .then(response => response.json())
-    .then(data => {
-            contenedor.innerHTML=""
-            for(const curso of data){
-                if(curso.categoria == btn){
-                contenedor.innerHTML +=  `
-                <div class="cursos"> 
-                    <figure>
-                      <img src="${curso.img}" alt="${curso.alt}">
-                    </figure>
-                    <div class="contenido">
-                      <h4>${curso.nombre}</h4>
-                     <p>${curso.descripcion}</p>
-                     <a href="#">Ver más...</a>
-                    </div>
-                  </div>
-                `
-                }
-            }
-        
-        
-    })
+/* ------------------------------ SELECTOR CATEGORIAS -------------------------------- */
+const mostrarCursos = (btn) => {
+  contenedor.innerHTML = ""
+  for (const curso of cursos) {
+    if (curso.categoria == btn) {
+      contenedor.innerHTML += `
+        <div class="cursos"> 
+            <figure>
+             <img src="${curso.img}" alt="${curso.alt}">
+            </figure>
+          <div class="contenido">
+            <h4>${curso.nombre}</h4>
+            <p>${curso.descripcion}</p>
+            <a href="#">Ver más...</a>
+          </div>
+        </div>
+      `
+    }
+  }
 }
+
+fetch(DBCursos_ROUTE)
+  .then(response => response.json())
+  .then(data => {
+    for (const curso of data) {
+      cursos.push(curso)
+    }
+    mostrarCursos("informatica")
+  })
+
 let btn = ""
 btnInformatica.addEventListener("click", () =>{
-    btn = "informatica"
-    mostrarCursos(btn)
+    mostrarCursos("informatica")
 })
 btnAdministracion.addEventListener("click", () =>{
-    btn = "administracion"
-    mostrarCursos(btn)
+    mostrarCursos("administracion")
 })
 btnHumanidades.addEventListener("click", () =>{
-    btn = "humanidades"
-    mostrarCursos(btn)
+    mostrarCursos("humanidades")
 })
 btnIdiomas.addEventListener("click", () =>{
-    btn = "idiomas"
-    mostrarCursos(btn)
+    mostrarCursos("idiomas")
 })
 
 
-/* ----------------------------- Vision banner ----------------------------- */
+/* --------------------------------- BANNER VISION ---------------------------------- */
 
 let image_parallax = document.querySelector('.parax');
 let texto_vision = document.querySelector('.visor');
@@ -92,3 +70,21 @@ if (window.innerWidth > 900) {
 
 window.addEventListener("resize", () => {window.location.reload()});
 window.addEventListener("scroll",scrollparallax);
+
+/* ---------------------------- FORMULARIO DE CONTACTO------------------------------ */
+
+const formularioContacto = document.getElementById("contactForm")
+let contacto = []
+
+
+formularioContacto.addEventListener("submit", (event) =>{
+  event.preventDefault()
+    contacto.push({
+      nombre: formularioContacto.nombre.value,
+      email: formularioContacto.email.value,
+      cuestion: formularioContacto.cuestion.value
+    })
+})
+
+
+

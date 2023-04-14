@@ -10,9 +10,10 @@
     <title>Academia X</title>
 </head>
 <body> 
+
+
   <header>
     <img src="./img/logoWhite.png" alt="Logo de una silueta de la cabeza con una spinner">
-    
     <nav class="headnav">
       <a href="#nav-home">Home</a>
       <a href="#nav-cursos">Cursos</a>
@@ -22,27 +23,30 @@
       <br>
       <a href="ingreso.html">Ingresa</a>
       <a href="registro.html">Regístrate</a>
-    
     </nav>
   </header>
-  <main>
 
-      <section class="hero"> <!-- seccion Hero -->
+
+  <main>
+      <!-- seccion Hero -->
+      <section class="hero"> 
         <div class="textoHero">
-        <h1 id="nav-home">Somos una plataforma de aprendizaje en línea con una amplia gama de cursos a tu disposición</h1>
-        <p>Únete a nuestra comunidad  y descubre el mundo del aprendizaje en línea a tu propio ritmo.</p>
-        <br>
-        <br>
-        <span> <p class="inscribete"><strong> Inscríbete ahora y te regalamos una semana</strong></p></span>
-        <button>Comenzar prueba gratuita</button>
-      </div>
-      <div class="imagenHero">
-        <img src="./Assets/imagen hero.jpg" alt="Frase motivadora nunca dejes de aprender">
-      </div>
+          <h1 id="nav-home">Somos una plataforma de aprendizaje en línea con una amplia gama de cursos a tu disposición</h1>
+          <p>Únete a nuestra comunidad y descubre el mundo del aprendizaje en línea a tu propio ritmo.</p>
+          <br>
+          <br>
+          <span>
+            <p class="inscribete"><strong> Inscríbete ahora y te regalamos una semana</strong></p>
+          </span>
+          <button>Comenzar prueba gratuita</button>
+        </div>
+        <div class="imagenHero">
+          <img src="./Assets/imagen hero.jpg" alt="Frase motivadora nunca dejes de aprender">
+        </div>
       </section>
 
-
-      <section class="bannerobjetivos"> <!-- seccion objetivos -->
+      <!-- seccion objetivos -->
+      <section class="bannerobjetivos"> 
         <h3>Invierte en tus objetivos profesionales</h3>
         <div class="objetivos">
           <img src="./img/objetivo1.svg" alt="Hombre eligiendo una opcion"> <!-- targeta de objetivo -->
@@ -60,15 +64,14 @@
           <p>Estudia según tu tiempo y ritmo, adaptado a tu estilo de vida.</p>
         </div>
         <div class="objetivos">
-          <img src="./img/objetivo4.svg" alt="Mujer mostrando un certificado aprobado" class="objetivo4"> <!-- targeta de objetivo -->
+          <img src="./img/objetivo4.svg" alt="Mujer mostrando un certificado aprobado"> <!-- targeta de objetivo -->
           <h4>Certificados ilimitados.</h4>
           <p>Obtén certificados por cada curso que realices, sin límites.</p>
         </div>
       </section>
 
-
-       <!-- seccion cursos -->
-       <section class="section-cursos">
+      <!-- seccion cursos -->
+      <section class="section-cursos">
         <h3 id="nav-cursos">Explora nuestros cursos más populares</h3>
         <div class="containercat">
           <button id="informatica">Informatica</button>
@@ -76,14 +79,10 @@
           <button id="humanidades">Humanidades</button>
           <button id="idiomas">Idiomas</button>
         </div>
+        <div id="bannercursos"></div>
+      </section>
 
-        <div id="bannercursos">
-          
-        </div>
-        </section>
-
-        
-      <!-- Seccion About us -->
+      <!-- Seccion Nuestra visión -->
       <section class="bannervision"> 
         <h3 id="nav-about">Acerca de nosotros</h3>
         <div class="contenedor">
@@ -92,31 +91,57 @@
             <h4>Nuestra visión</h4>
              <p>Creemos que el aprendizaje es fundamental para el crecimiento personal y profesional, y estamos comprometidos en ofrecer una educación de calidad, actualizada y accesible para todos.</p>
           </div>
-          
         </div>
-        <p>En nuestra selección de profecionales evaluamos no solo la experiencia, sino también los resultados y el feedback que recibimos para cada uno de nuestros cursos. Por esto, podemos asegurarte que contamos con excelentes profesores para cada área de tu interés.</p>
       </section>
-      <div class="teachers">
-        <div class="presentacion"> <!-- targeta de integrante -->
-          <img src="./Assets/colega1.webp" alt="Especialista en ciberseguridad">
-          <div class="teacher-details">
-            <h4>Ruth Vanguard</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam necessitatibus sunt, aliquam totam esse quos ad provident quae temporibus debitis dolores aliquid repellat perspiciatis ab harum non unde consequatur eius!
-          Consectetur laudantium nesciunt rerum eveniet itaque nisi quasi unde magni. Provident aut libero, eos suscipit ipsam cumque consequatur autem explicabo ut error doloremque commodi, saepe odio perferendis aliquam? Fugit, quia.
-          Harum exercitationem, corporis impedit temporibus rerum assumenda, earum doloribus quod quam eum recusandae sed maxime ratione perferendis nemo ad commodi quo totam deleniti aut porro fuga ab architecto. Inventore, alias!</p>
+
+      <!-- Sección About us -->
+      <section class="about">
+        <div class="parrafoTeachers">
+          <p>En nuestra selección de profesionales evaluamos no solo la experiencia, sino también los resultados y el feedback
+            que recibimos para cada uno de nuestros cursos. Por esto, podemos asegurarte que contamos con excelentes
+            profesores para cada área de tu interés.</p>
+        </div>
+        <div class="teachers">
+          <div class="presentacion"> <!-- tarjeta de integrante -->
+            <img src="./Assets/colega1.webp" alt="Especialista en ciberseguridad">
+            <div class="teacher-details">
+              <h4>Ruth Vanguard</h4>
+              <p>Con una amplia experiencia en el campo de la seguridad informática,<br>
+                comenzó su carrera en el mundo de la tecnología como una entusiasta<br>
+                autodidacta, dedicando largas horas a explorar y aprender sobre<br>
+                los sistemas informáticos y las redes.<br>
+                Su habilidad y pasión por la tecnología la llevó posteriormente a trabajar<br>
+                como profesional en este campo, donde ha trabajado en la protección<br>
+                de sistemas y redes de importantes empresas y organizaciones.<br><br>
+                <strong>Ruth es una líder en su campo y una voz influyente en la comunidad de ciberseguridad.</strong><br>
+                <br>
+                Actualmente, es co-fundadora de <strong>Academia X</strong> y una excelente mentora <br>
+                y guía para aquellos interesados en desarrollar su carrera en la ciberseguridad,<br>
+                brindando una educación de calidad y de vanguardia.<br>
+                </p>
+            </div>
+          </div>
+          <div class="presentacion"> <!-- tarjeta de integrante -->
+            <img src="./Assets/colega2.webp" alt="Computer science PhD">
+            <div class="teacher-details">
+              <h4>Anahis Gauss</h4>
+              <p>Doctora en ciencias de la computación y co-fundadora de <strong>Academia X,</strong> <br>
+                es una apasionada por la educación y la tecnología.<br>
+                Con una amplia experiencia en el campo de la informática, su visión <br>
+                fue la de crear una plataforma de aprendizaje en línea para <br>
+                democratizar el acceso a la formación profesional y ofrecer cursos de <br>
+                alta calidad en diferentes áreas. <br><br>
+                Además de su rol como co-fundadora, <strong>Anahis ha trabajado como <br>
+                consultora y asesora para empresas líderes en el sector tecnológico,</strong> <br>
+                ayudándoles a desarrollar estrategias innovadoras.<br><br>
+                Con su visión y liderazgo, ha llevado a <strong>Academia X</strong> a la vanguardia de la<br>
+                educación en online, convirtiéndola en una plataforma de referencia<br>
+                para el <strong>E-Learning.</strong>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="presentacion"> <!-- targeta de integrante -->
-          <img src="./Assets/colega2.webp" alt="Computer science PhD">
-          <div>
-            <h4>Anahis Gauss</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam necessitatibus sunt, aliquam totam esse quos ad provident quae temporibus debitis dolores aliquid repellat perspiciatis ab harum non unde consequatur eius!
-          Consectetur laudantium nesciunt rerum eveniet itaque nisi quasi unde magni. Provident aut libero, eos suscipit ipsam cumque consequatur autem explicabo ut error doloremque commodi, saepe odio perferendis aliquam? Fugit, quia.
-          Harum exercitationem, corporis impedit temporibus rerum assumenda, earum doloribus quod quam eum recusandae sed maxime ratione perferendis nemo ad commodi quo totam deleniti aut porro fuga ab architecto. Inventore, alias!</p>
-          </div>
-        </div>
-      </div>
-    
+      </section>
     
       <!-- seccion contacto y formulario -->
       <section class="contact">
@@ -125,21 +150,21 @@
           <span>¿Tienes dudas? contáctanos y te responderemos a la brevedad</span>
         </div>
         <div class="contact-box">
-          <form>
-            <div class="inputContainer field-main" >
+          <form id="contactForm">
+            <div class="inputContainer field-main">
               <label for="nombre">Nombre</label>
               <input type="text" id="nombre" placeholder="Escribe tu Nombre" required>
             </div>
             <div class="inputContainer field-main">
-              <label for="asunto">Asunto</label>
-              <input type="text" id="asunto" placeholder="Escribe tu Asunto" required>
+              <label for="asunto">Email</label>
+              <input type="text" id="email" placeholder="tuEmail@algo.com" required>
             </div>
             <div class="inputContainer field-main">
               <label for="cuestion">Mensaje</label>
               <textarea id="cuestion" placeholder="Escribe tu Cuestión" cols="30" rows="9" required></textarea>
             </div>
             <div class="inputContainer field-main">
-            <input type="submit" value="Enviar" id="mainform-btn">
+              <input type="submit" value="Enviar" id="mainform-btn">
             </div>
           </form>
         </div>
@@ -148,21 +173,22 @@
 
     
     <footer>
-        <div>
+      <div>
         <img src="./logos de redes/logoAcademiaX.png" alt="Logo academia X">
         <p>Academia X</p>
-        </div>
-       
-        <div class="texto-footer">
+      </div>
+    
+      <div class="texto-footer">
         <p>Todos los derechos reservados. Argentina Programa 4.0 © 2023 Academia X</p>
-        <span><a href="./privacidad.html" target="_blank">Política de Privacidad</a> y <a href="./terminos_uso.html" target="_blank">Condiciones de Uso</a></span>
-        </div>
-
-        <div class="redesSociales">
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-instagram"></i>
-          <i class="bi bi-twitter"></i>
-        </div>
+        <span><a href="./privacidad.html" target="_blank">Política de Privacidad</a> y <a href="./terminos_uso.html"
+            target="_blank">Condiciones de Uso</a></span>
+      </div>
+    
+      <div class="redesSociales">
+        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+      </div>
     </footer>
 
   <script src="./js/script.js"></script>
