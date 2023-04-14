@@ -74,16 +74,22 @@ window.addEventListener("scroll",scrollparallax);
 /* ---------------------------- FORMULARIO DE CONTACTO------------------------------ */
 
 const formularioContacto = document.getElementById("contactForm")
-let contacto = []
+const contacto = []
 
 
-formularioContacto.addEventListener("submit", (event) =>{
-  event.preventDefault()
+formularioContacto.addEventListener("submit", (evento) =>{
+  evento.preventDefault()
     contacto.push({
       nombre: formularioContacto.nombre.value,
       email: formularioContacto.email.value,
       cuestion: formularioContacto.cuestion.value
     })
+    Toastify({
+      text: "Mensaje enviado",
+      duration: 4000
+    }).showToast();
+      
+    formularioContacto.reset()
 })
 
 
